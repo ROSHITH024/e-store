@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    #id_btn {
+        border-radius: 100px 100px 100px 100px;
+    }
+</style>
+
+<body>
+    <!-- navigation start -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">e-Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mb-md-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">All products</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Popular</a></li>
+                            <li><a class="dropdown-item" href="#">New</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="d-flex" role="search">
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <button class="btn btn-outline-dark btn-lg" type="submit">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="ms-2">Carts</span>
+                        <span class="badge text-bg-dark rounded-circle">4</span>
+                    </button>
+                    <button class="btn btn-outline-dark btn-lg ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Feedback
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Feedback</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea name="" id="" cols="30" rows="7" placeholder="Please enter..." class="form-control"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navigation end -->
+    <div class="card mb-5 ms-5 me-5 mt-4 bg-secondary">
+        <div class="card mb-5 mt-5 container" style="max-width: 90%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./image/4f37fca8-6bce-43e7-ad07-f57ae3c13142.webp" class="img-fluid rounded-start"
+                        alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike shoe for men (White)</h5>
+                        <p class="card-text text-success">Special price</p>
+                        <div class="row-1" style="width: 80%; display: inline-flex;">
+                            <h4>
+                                <i class="fa-solid fa-indian-rupee-sign fa-1x"><b class="m-2 card-title">1223</b>
+                                </i>
+                            </h4>
+                            <h6 class="text-secondary m-2">
+                                <i class="fa-solid fa-indian-rupee-sign fa-1x"><del class="m-2 card-title">4499</del>
+                                </i>
+                            </h6>
+                            <h6 class="text-success m-2">
+                                75%
+                            </h6>
+
+                        </div>
+                        <div class="row-1 mt-3">
+                            <a href="#" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true"
+                                id="id_btn">3.9<i class="fa-solid fa-star ms-2"></i></a>
+                            <h6 class="text-secondary ms-2 mt-3">
+                                255 rating and 26 reviews
+                            </h6>
+                        </div>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col-6 btn btn-warning text-white" style="width: 40%;">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="ms-2">ADD TO CART</span>
+                        </div>
+                        <div class="col-6 btn btn-warning ms-2 text-white" style="width: 40%; background: #fb641b;">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span class="ms-2">BUY NOW</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- accordion start -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Reviews
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes
+                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                            can
+                            modify any of this with custom CSS or overriding our default variables. It's also worth
+                            noting
+                            that just about any HTML can go within the <code>.accordion-body</code>, though the
+                            transition
+                            does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- accordion ends -->
+        </div>
+    </div>
+    <!-- <footer class="container-fluid bg-dark text-white text-center mt-3" style="height: 90px;">
+         <h1 class="fw-bolder">copywrite @ 2022</h1>
+        <p class="pt-4">copyright @ e-Store 2022</p>
+
+    </footer> -->
+
+
+</body>
+
+</html>
